@@ -30,7 +30,7 @@ var WebCodeCamJS = function(element) {
     var videoSelect, lastImageSrc, con, beepSound, w, h, lastCode;
     var display = Q(element),
         DecodeWorker = null,
-        video = html('<video muted autoplay></video>'),
+        video = html('<video muted autoplay playsinline></video>'),
         sucessLocalDecode = false,
         localImage = false,
         flipMode = [1, 3, 6, 8],
@@ -57,7 +57,8 @@ var WebCodeCamJS = function(element) {
                         sourceId: true
                     }]
                 },
-                audio: false
+                audio: false,
+                facingMode: 'environment'
             },
             flipVertical: false,
             flipHorizontal: false,
