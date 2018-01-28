@@ -58,7 +58,6 @@ var WebCodeCamJS = function(element) {
                     }]
                 },
                 audio: false,
-                facingMode: 'environment'
             },
             flipVertical: false,
             flipHorizontal: false,
