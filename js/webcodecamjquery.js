@@ -25,7 +25,7 @@
     };
     var Self, display, videoSelect, lastImageSrc, con, beepSound, w, h, lastCode,
         DecodeWorker = null,
-        video = $('<video muted autoplay></video>')[0],
+        video = $('<video muted autoplay playsinline></video>')[0],
         sucessLocalDecode = false,
         localImage = false,
         flipMode = [1, 3, 6, 8],
